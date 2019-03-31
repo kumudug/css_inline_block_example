@@ -3,6 +3,7 @@
         .title {
             display: inline-block;
         }
+
         .nav {
             display: inline-block;
             margin: 0;
@@ -11,19 +12,32 @@
             text-align: right;
             width: calc(100% - 56px);
         }
+
         .nav li {
             display: inline-block;
         }
+
+        header {
+            box-sizing: border-box;/* Margin is included in width calculation */
+        }
+
+        body {
+            margin: 0;
+        }
     </style>
 </head>
+
 <body>
     <main>
-        <div class="title">
-            My Title
-        </div><nav class="nav"><!-- If you want to put the nav to the next line you need to increase the width in line 12. Cause when you put it to next line it will be considered a space and that space takes width -->
-            <li>Menu1</li>
-            <li>Menu2</li>
-            <li>Menu3</li>
-        </nav>
+        <header>
+            <div class="title">
+                My Title
+            </div><nav class="nav">
+                <!-- If you want to put the nav to the next line you need to increase the width in line 12. Cause when you put it to next line it will be considered a space and that space takes width -->
+                <li>Menu1</li>
+                <li>Menu2</li>
+                <li>Menu3</li>
+            </nav>
+        </header>
     </main>
 </body>
